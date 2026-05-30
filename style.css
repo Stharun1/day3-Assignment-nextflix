@@ -59,7 +59,7 @@ h2 .greencolor {
 }
 
 .grid-card :hover {
-    border-color: #3dd8c8;
+    border-color: #3d918a;
 }
 
 .grid-card h3 {
@@ -98,7 +98,7 @@ h2 .greencolor {
     transition: border-color 0.25s ease;
 }
 .grid-card:hover {
-    border-color: #66d5c8;
+    border-color: #44aba1;
 }
 
 .grid-card .icon {
@@ -228,7 +228,7 @@ h2 .greencolor {
 
 /* 2. Hover State: Only change the border color */
 .grid-card2:hover {
-    border: 2px solid rgb(53, 130, 139);
+    border: 2px solid rgb(5, 15, 16);
 }
 
 .grid-card2 .icon2 {

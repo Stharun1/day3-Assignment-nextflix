@@ -1,0 +1,245 @@
+body {
+    background-color: #020714;
+    /* True deep navy theme matching DevGnan */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+h2 .whitecolor {
+    color: white;
+}
+
+h2 .greencolor {
+    color: #2ec4b6;
+}
+
+.paragraph {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #94a3b8;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.grid-container-2x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 horizontal columns */
+    grid-template-rows: repeat(2, auto);
+    /* 2 vertical rows */
+    gap: 24px;
+    padding: 20px;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.grid-card {
+    background-color: #111a33;
+    border: 1px solid #1e293b;
+    border-radius: 40px;
+    padding: 25px 15px;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: left;
+    height: 250px;
+}
+
+.grid-card :hover {
+    border-color: #3dd8c8;
+}
+
+.grid-card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grid-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.grid-card .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #03302c;
+    border-radius: 9px;
+
+    margin: 0 0 30px 0;
+
+    display: flex;
+    align-items: center;
+    /* Vertical centering inside box */
+    justify-content: center;
+    /* Horizontal centering inside box */
+}
+
+.grid-card .icon i {
+    color: #ffffff;
+    display: block;
+}
+
+.grid-card {
+    transition: border-color 0.25s ease;
+}
+.grid-card:hover {
+    border-color: #66d5c8;
+}
+
+.grid-card .icon {
+    transition: background-color 0.25s ease;
+}
+.grid-card:hover .icon {
+    background-color: #66d5c8;
+}
+
+.grid-card .icon i {
+    transition: color 0.25s ease;
+}
+
+/*
+.grid-card:hover .icon i {
+    color: #010303;        // no chnage in icon clor on hover     
+}*/
+
+/* ===================================================================================================*/
+
+.grid-container-1x3 {
+    background-color: #f0f4f8;
+}
+
+.grid-container-1x3 h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 20px 0 0 20px;
+}
+
+.grid-container-1x3 h2 .whitecolor {
+    color: black;
+}
+
+.grid-container-1x3 h2 .greencolor {
+    color: rgb(53, 139, 122);
+}
+
+.grid-container-1x3 .paragraph {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    color: #171a19;
+    text-align: center;
+    margin: 0 20px 70px 20px;
+    line-height: 1.6;
+}
+
+.grid_1X3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;          /* Forces all cards to stretch to the same height */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.grid-card2 {
+    background-color: white;
+    border: 2px solid transparent; 
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #333333;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: left;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* Removed 'transform' and 'box-shadow' to stop the lift effect */
+    transition: border-color 0.3s ease; 
+}
+
+.grid-card2 h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.paragraphText {
+    font-size: 16px;
+    color: #555555;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 70px;          
+}
+
+.icon2 {
+    width: 50px;
+    height: 50px;
+    background-color: #03302c;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon2 i {
+    color: #ffffff;
+    display: block;
+    font-size: 24px;
+}
+
+.list {
+    font-family: 'Outfit', 'Segoe UI', sans-serif;
+    list-style-type: disc;
+    padding-left: 18px;         
+    margin: 0;
+    color: #555555;
+    font-size: 16px;            
+    line-height: 1.4;             
+}
+
+.list li {
+    margin-bottom: 16px;   
+}
+
+/* 2. Hover State: Only change the border color */
+.grid-card2:hover {
+    border: 2px solid rgb(53, 130, 139);
+}
+
+.grid-card2 .icon2 {
+    transition: background-color 0.25s ease;
+}
+
+.grid-card2:hover .icon2 {
+    background-color: #51b8ac;
+}
+
+.grid-card2:hover .list li {
+    transition: color 0.25s ease;
+    color: #206570;
+}
